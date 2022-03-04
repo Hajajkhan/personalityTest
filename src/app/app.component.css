@@ -1,0 +1,12 @@
+
+  h2{
+    align-items: center;
+  }
+ p{
+   background-color: #ddd;
+   font-size: large;
+   justify-content: center;
+   color: red;
+   border: 2px solid black;
+   width: 600px;
+ }

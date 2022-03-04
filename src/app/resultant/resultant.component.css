@@ -1,0 +1,20 @@
+.matStep{
+    display: flex;
+    width: auto;
+    margin: 2px solid black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    font-size:x-large;
+    font-weight: bold;
+    align-items: center;
+    color: red;
+    border: 2px black solid;
+    border-radius: 2px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    padding: 20px;
+    margin-bottom: 50px;
+}

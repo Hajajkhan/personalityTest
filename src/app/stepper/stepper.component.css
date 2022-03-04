@@ -1,0 +1,25 @@
+.example-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+    align-items: flex-start;
+  }
+  .example-radio-button {
+    margin: 5px;
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    background-color: #ddd;
+    width: auto;
+  }
+  .main>mat-stepper{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    color: rgb(9, 9, 146);
+    margin: 100px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 50px 10px rgb(138, 201, 143) inset;  }

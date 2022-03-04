@@ -1,0 +1,21 @@
+#startingPage{
+    display: flex;
+    width: auto;
+    border: 2px solid black;
+    background-color: #ddd;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+h2{
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+    color: red;
+}
+q{
+    font-size:large;
+    padding: 50px;
+    width: 500px;
+}
