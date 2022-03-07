@@ -9,15 +9,14 @@
             </h1>
           </label>
           <mat-radio-group
-            [(ngModel)]="favoriteSeason" 
             aria-labelledby="example-radio-group-label"
             class="example-radio-group">
             <mat-radio-button 
               *ngFor="let item of firstOptions"
               name="options"
+              [checked]="item.selected"
               class="example-radio-button" 
-              (change)="onChangeItem(item.value)"
-              
+              (change)="onChangeItem(item)"
               [value]="item.value" >
               {{item.option}}
             </mat-radio-button>
@@ -34,15 +33,15 @@
           </h1>
           </label>
           <mat-radio-group 
-            [(ngModel)]="favoriteSeason" 
             aria-labelledby="example-radio-group-label" 
             class="example-radio-group">
             <mat-radio-button 
               class="example-radio-button" 
               *ngFor="let item of secondOptions"
               name="options"
-            [value]="item.value" 
-            (change)="onChangeItem(item.value)"
+              [checked]="item.selected"
+              [value]="item.value" 
+              (change)="onChangeItem(item)"
             >
               {{item.option}}
             </mat-radio-button>
@@ -60,15 +59,15 @@
             you’re in charge of. You:</h1>
           </label>
           <mat-radio-group 
-            [(ngModel)]="favoriteSeason" 
             aria-labelledby="example-radio-group-label" 
             class="example-radio-group">
             <mat-radio-button 
               class="example-radio-button" 
               *ngFor="let item of thirdOptions" 
               name="options"
+              [checked]="item.selected"
               [value]="item.value" 
-              (change)="onChangeItem(item.value)"
+              (change)="onChangeItem(item)"
               >
               {{item.option}}
             </mat-radio-button>
@@ -86,8 +85,6 @@
           </h1>
           </label>
           <mat-radio-group 
-            [(ngModel)]="favoriteSeason" 
-          
             aria-labelledby="example-radio-group-label" 
             class="example-radio-group">
             <mat-radio-button 
@@ -95,7 +92,8 @@
               *ngFor="let item of fourthOptions" 
               [value]="item.value" 
               name="options"
-              (change)="onChangeItem(item.value)"
+              [checked]="item.selected"
+              (change)="onChangeItem(item)"
               >
               {{item.option}}
             </mat-radio-button>
